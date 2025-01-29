@@ -1,0 +1,976 @@
+/* ***************responsive**************** */
+@media screen and (max-width: 1920px) {}
+
+@media screen and (max-width: 1800px) {}
+
+@media screen and (max-width: 1700px) {
+    .BigContainer {
+        padding: 0px 30px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width:1200px) {
+    .Teleperson {
+        padding: 30px 0px;
+    }
+
+    .Teleperson-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+
+
+    .footer-wrapper {
+        gap: 34px;
+    }
+
+    .footer-top {
+
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+
+
+    .footer-top-ptn h3 {
+
+
+        font-size: 30px;
+    }
+
+    .footer-title span {
+        font-weight: 600;
+    }
+
+    .footer-middle {
+        flex-wrap: wrap-reverse;
+        gap: 20px;
+    }
+
+    .footer-brand {
+        gap: 20px;
+        max-width: 330px;
+    }
+    .scroller-main{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    .metrics_section_main {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    /************** mobile menu ***************/
+
+    .mobileIcon {
+        display: block;
+    }
+
+    .mobileIcon {
+        height: 35px;
+        cursor: pointer;
+        z-index: 99999;
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-width: 44px;
+        justify-content: flex-end;
+    }
+
+    .mobileIcon a {
+        width: 55px;
+        height: 7px;
+        border-radius: 0;
+        display: inline-block;
+        background: #000;
+        position: relative;
+        -webkit-transition: all .3s ease 0s;
+        -moz-transition: all .3s ease 0s;
+        -ms-transition: all .3s ease 0s;
+        -o-transition: all .3s ease 0s;
+        transition: all .3s ease 0s;
+    }
+
+    .mobileIcon a:before {
+        position: absolute;
+        content: '';
+        width: 54px;
+        height: 7px;
+        border-radius: 0;
+        background: #000;
+        top: -8px;
+        -webkit-transition: all .3s ease 0s;
+        -moz-transition: all .3s ease 0s;
+        -ms-transition: all .3s ease 0s;
+        -o-transition: all .3s ease 0s;
+        transition: all .3s ease 0s;
+    }
+
+    .mobileIcon a:after {
+        position: absolute;
+        content: '';
+        width: 54px;
+        height: 7px;
+        border-radius: 0;
+        background: #000;
+        bottom: -8px;
+        -webkit-transition: all .3s ease 0s;
+        -moz-transition: all .3s ease 0s;
+        -ms-transition: all .3s ease 0s;
+        -o-transition: all .3s ease 0s;
+        transition: all .3s ease 0s;
+    }
+
+    .menu-open .header-logo {
+        z-index: 9999;
+    }
+
+    .menu-open .mobileIcon a {
+        background: rgb(255 255 255 / 0%);
+    }
+
+    .menu-open .mobileIcon a:before {
+        transform: rotate(45deg);
+        top: -1px;
+        background: var(--black);
+    }
+
+    .menu-open .mobileIcon a:after {
+        transform: rotate(-45deg);
+        top: -1px;
+        background: var(--black);
+    }
+
+    .mobileIcon a:before {
+        width: 24px;
+        height: 3px;
+        border-radius: 5px;
+        background: var(--black);
+    }
+
+    .mobileIcon a,
+    .mobileIcon a:after {
+        width: 24px;
+        height: 3px;
+        border-radius: 5px;
+        background: var(--black);
+    }
+
+    .mobileIcon a {
+        width: 24px;
+    }
+
+    .right_menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: var(--white);
+        bottom: 0;
+        z-index: 999;
+        width: 100%;
+        transition: transform 300ms ease-in-out 0s;
+        transform: translate3d(100%, 0, 0);
+        transition: transform 300ms ease, opacity 300ms ease;
+        padding: 50px 30px 30px;
+        box-shadow: 0 10px 10px 0 rgb(0 0 0 / 23%);
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        max-width: 100%;
+    }
+
+    .menu-open .right_menu {
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+        backface-visibility: hidden;
+        transition: transform 300ms ease, opacity 300ms ease;
+        display: flex;
+        overflow: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-open {
+        overflow: hidden;
+    }
+
+    .menu-open ul.header_menu {
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 40px;
+        gap: 0;
+        width: 100%;
+    }
+
+    .menu-open .header_logo {
+        z-index: 9999;
+    }
+
+    .menu-open .right_menu_btn {
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    .menu-open .header_logo {
+        position: relative;
+        z-index: 9999;
+        justify-content: flex-start;
+    }
+
+    ul.header_menu li {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid rgb(255 255 255 / 30%);
+        width: 100%;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .menu-open .right_menu ul li a:after {
+        width: 30px;
+    }
+
+    .right_menu {
+        display: none;
+    }
+
+    .right_menu ul.sub_menu {
+        display: none !important;
+        position: unset;
+        width: 100%;
+        background: #290140 !important;
+        opacity: 1;
+        transform: unset;
+        transition: unset;
+        margin-top: 20px;
+        padding: 0 0 0 0;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+
+    .right_menu ul.sub_menu.submenu-open {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    .menu-open .header_menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-open .header_menu ul a:after {
+        background: var(--white);
+        width: 0 !important;
+    }
+
+    .menu-open .header_menu ul a:hover:after {
+        width: 100% !important;
+    }
+
+    .menu-open a.btn {
+        color: var(--white);
+        border: 1px solid #fff;
+    }
+
+    .menu-open a.btn:hover,
+    .menu-open a.btn:active,
+    .menu-open a.btn:focus,
+    .menu-open a.btn:focus-visible {
+        background: transparent;
+        color: var(--black);
+        border-color: var(--black);
+        outline: unset;
+    }
+
+    .menu-open .primary-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 14px 0px;
+        column-gap: 40px;
+        margin: 0px auto;
+    }
+    .scroller-main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+    @media screen and (max-width: 900px) {
+        .Company {
+            padding: 30px 0px;
+        }
+
+        .serve {
+            padding: 30px 0px;
+        }
+
+        .metrics_section {
+            padding: 30px 0px;
+        }
+
+        .footer-wrapper {
+            gap: 20px;
+        }
+
+        .footer-top {
+            gap: 10px;
+            padding-bottom: 40px;
+        }
+
+        .footer-top-ptn h3 {
+
+
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .footer-top-ptn p {
+            font-size: 16px;
+        }
+
+        .footer-title span {
+            font-weight: 600;
+        }
+
+        .footer-middle {
+            flex-wrap: wrap-reverse;
+            gap: 10px;
+        }
+
+        .footer-brand {
+            gap: 20px;
+            max-width: 330px;
+        }
+
+        .footer-links {
+            gap: 30px;
+
+        }
+
+        .footer-column a {
+            color: var(--white);
+            font-weight: 600;
+            font-size: 18px;
+            padding: 10px;
+            font-family: "poppins";
+        }
+
+        .ul-li li a {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 16px;
+            white-space: nowrap;
+            font-size: 16px;
+            font-weight: 300;
+            color: var(--white);
+            opacity: 0.8;
+        }
+
+    }
+
+    @media screen and (max-width: 767px) {
+        .Company {
+            padding: 30px 0px;
+        }
+
+        .server {
+            padding: 30px 0px;
+        }
+
+        .metrics_section {
+            padding: 30px 0px;
+        }
+
+        .banner {
+            padding: 30px;
+        }
+
+        .banner_main {
+
+            gap: 20px;
+        }
+
+        .banner-text h1 {
+            font-size: 30px;
+        }
+
+        .banner-text {
+            gap: 20px;
+        }
+
+        .banner-text p {
+            font-size: 16px
+        }
+
+        .demo {
+            padding: 10px 18px;
+            font-size: 16px;
+        }
+
+        .signup {
+            padding: 10px 18px;
+            font-size: 16px;
+        }
+
+        .banner-img {
+            max-width: 984px;
+            padding-top: 24px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .company-title {
+            gap: 20px;
+        }
+
+        .company-title p {
+            font-size: 16px;
+        }
+
+        .logo-container {
+            gap: 50px;
+        }
+
+        .tele-title h2 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .tele-title span {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .Teleperson-left {
+            gap: 20px;
+            align-items: center;
+        }
+
+        .Teleperson-left p {
+            line-height: normal;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .Teleperson-count {
+            margin-left: 0px;
+            gap: 20px;
+            padding-top: 20px;
+        }
+
+        .Teleperson-count h1 {
+            font-size: 30px;
+        }
+
+        .Teleperson-count h5 {
+            font-size: 18px;
+        }
+
+        .count-title p {
+            font-size: 16px;
+        }
+
+        /* ************8serve********** */
+        .serve-container {
+            gap: 20px;
+        }
+
+        .serve-tilte {
+            gap: 10px;
+        }
+
+        .serve-tilte h3 {
+            font-size: 30px;
+        }
+
+        .serve-tilte p {
+            font-size: 16px;
+            line-height: normal;
+        }
+
+        .company-hub-grid {
+
+            gap: 10px;
+            padding-top: 10px;
+        }
+
+        .company-hub-card {
+
+            gap: 10px;
+        }
+
+        .hub-icon {
+            display: flex;
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 46.667px;
+            background: rgba(66, 191, 166, 0.10);
+        }
+
+        .hub-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--green)
+        }
+
+        .hub-content h6 {
+            font-size: 18px;
+        }
+
+        .hub-content p {
+            font-size: 16px;
+        }
+
+        /* *******metrics************* */
+        .metrics_section_main {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        .metrics_right {
+            gap: 20px;
+        }
+
+        .metrics_right p {
+            font-style: 16px;
+            line-height: normal;
+        }
+
+        .right_title h4 {
+            font-size: 20px
+        }
+
+        .right_title p {
+            font-size: 16px
+        }
+
+        .footer-links {
+
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
+        }
+
+        .ul-li li a {
+
+            gap: 12px;
+            padding: 10px;
+            white-space: nowrap;
+
+        }
+
+        .footer-top {
+            flex-wrap: wrap;
+        }
+
+        .footer-top-ptn {
+
+            gap: 8px;
+
+        }
+     
+    }
+
+    @media screen and (max-width: 600px) {
+        .Company {
+            padding: 20px 0px;
+        }
+
+        .Teleperson {
+            padding: 20px 0px;
+        }
+
+        .serve {
+            padding: 20px 0px;
+        }
+
+        .btn-gp .feture {
+            white-space: nowrap;
+            font-size: 14px;
+        }
+
+        .btn-gp p {
+            white-space: nowrap;
+            font-size: 14px;
+        }
+
+        .banner-text {
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .banner-text h1 {
+            font-size: 20px;
+        }
+
+        .banner-text p {
+            font-size: 14px;
+            line-height: normal;
+        }
+
+        .demo {
+            padding: 10px 18px;
+            font-size: 16px;
+        }
+
+        .signup {
+            padding: 10px 18px;
+            font-size: 16px;
+        }
+
+        .company-title p {
+            font-size: 14px;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-self: center;
+            margin: 0 auto;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .tilte-logo {
+            max-width: 180px;
+            max-height: 80px;
+        }
+
+        .tele-title h2 {
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .tele-title span {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .Teleperson-left {
+            gap: 10px;
+            align-items: center;
+        }
+
+        .Teleperson-left .signup {
+            width: fit-content;
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .Teleperson-left p {
+            line-height: normal;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .Teleperson-wrapper {
+            gap: 27px;
+        }
+
+        .Teleperson-count {
+            flex-wrap: wrap;
+            margin-left: 0px;
+            gap: 10px;
+            padding-top: 10px;
+        }
+
+        .Teleperson-count h1 {
+            font-size: 20px;
+        }
+
+        .Teleperson-count h5 {
+            font-size: 16px;
+        }
+
+        .count-title p {
+            font-size: 14px;
+        }
+
+        .Teleperson-wrapper {
+            margin: auto;
+        }
+
+        /* ****************serve */
+        .serve-container {
+            gap: 10px;
+        }
+
+        .serve-tilte {
+            gap: 8px;
+        }
+
+        .serve-tilte h3 {
+            font-size: 20px;
+        }
+
+        .serve-tilte p {
+            font-size: 14px;
+            line-height: normal;
+        }
+
+        .company-hub-grid {
+            gap: 10px;
+            padding-top: 6px;
+        }
+
+        .company-hub-card {
+
+            gap: 6px;
+        }
+
+        .hub-icon {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 46.667px;
+            background: rgba(66, 191, 166, 0.10);
+        }
+
+        .hub-icon svg {
+            width: 15px;
+            height: 15px;
+            fill: var(--green)
+        }
+
+        .hub-content h6 {
+            font-size: 16px;
+        }
+
+        .hub-content p {
+            font-size: 14px;
+        }
+
+        .metrics_section_main {
+
+            gap: 6px;
+        }
+
+        .metrics_right {
+            gap: 10px;
+        }
+
+        .metrics_right p {
+            font-style: 14px;
+            line-height: normal;
+        }
+
+        .right_title h4 {
+            font-size: 16px;
+        }
+
+        .right_title p {
+            font-size: 14px
+        }
+
+        .footer-bottom p {
+            font-size: 12px;
+        }
+
+        .footer-bottom {
+            flex-wrap: wrap;
+            gap: 12px;
+
+        }
+        .footer-icons img {
+            width: 14px;
+            height: 14px;
+        }
+      
+        .footer-button {
+            padding: 10px 10px;
+            border-radius: 130px;
+            background-color: var(--green);
+            white-space: nowrap;
+            position: relative;
+        }
+        .footer-button a::after {
+            width: 20px;
+            height: 20px;
+        
+        }
+        .footer-button a {
+          
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+    }
+
+    @media screen and (max-width: 479px) {
+        .Company {
+            padding: 20px 0px;
+        }
+
+        .demo {
+            padding: 8px 10px;
+            font-size: 13px;
+        }
+
+        .signup {
+            padding: 8px 10px;
+            font-size: 13px;
+        }
+
+        .Teleperson-wrapper {
+            margin: auto;
+        }
+
+        .learn-more {
+            white-space: nowrap;
+            font-size: 10px;
+        }
+
+        .hub-content h6 {
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .hub-content p {
+            font-size: 12px;
+            line-height: normal;
+        }
+
+        .eight_p p {
+            font-style: 14px;
+            line-height: normal;
+        }
+
+        .right_title h4 {
+            font-size: 16px;
+        }
+
+        .right_title p {
+            font-size: 12px
+        }
+
+        .right_title {
+            gap: 4px;
+        }
+
+        .download_btn {
+            padding: 5px 10px;
+
+        }
+
+        .download_btn a {
+
+            font-size: 12px;
+        }
+
+        .download_btn a::before {
+            width: 20px;
+            height: 20px;
+            top: 0px;
+            vertical-align: middle;
+            padding-left: 1px;
+        }
+
+        .footer-links {
+
+            grid-template-columns: repeat(1, 1fr);
+            gap: 4px;
+
+        }
+
+        .ul-li li a {
+
+            gap: 4px;
+            padding: 10px;
+            white-space: nowrap;
+
+        }
+
+        .footer-top {
+            flex-wrap: wrap;
+        }
+
+        .footer-top-ptn {
+
+            gap: 8px;
+
+
+        }
+
+        .footer-bottom p {
+            font-size: 12px;
+        }
+    }
+
+    @media screen and (max-width: 374px) {
+        .Company {
+            padding: 20px 0px;
+        }
+
+        .container {
+            padding: 0px 20px;
+        }
+
+        .header-logo {
+            max-width: 140px;
+        }
+
+        .btn-gp .feture {
+            white-space: nowrap;
+            font-size: 10px;
+        }
+
+        .btn-gp p {
+            white-space: nowrap;
+            font-size: 10px;
+        }
+
+        .demo {
+            padding: 3px 10px;
+            font-size: 10px;
+        }
+
+        .signup {
+            padding: 3px 10px;
+            font-size: 10px;
+        }
+
+        .demo::before {
+            width: 14px;
+            height: 14px;
+            margin-right: 6px;
+        }
+
+        .Teleperson-wrapper {
+            margin: auto;
+        }
+
+
+    }
