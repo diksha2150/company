@@ -1,15 +1,29 @@
 /* ***************responsive**************** */
 @media screen and (max-width: 1920px) {}
 
-@media screen and (max-width: 1800px) {}
+@media screen and (max-width: 1800px) {
+    
+.pin-spacer {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 30px;
+}
+}
 
 @media screen and (max-width: 1700px) {
     .BigContainer {
         padding: 0px 30px;
     }
-
-
-
+    .right-img{
+        flex: 1;
+     
+      }
+      .scroller-main {
+        gap: 20PX;
+      }
+      .logo_otr{
+        padding: 10px 0px;
+      }
 }
 
 @media screen and (max-width: 1600px) {}
@@ -20,7 +34,15 @@
     .Teleperson {
         padding: 30px 0px;
     }
-
+    .Teleperson-count{
+        margin-left: 0px;
+    }
+    .Teleperson-container{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
     .Teleperson-wrapper {
         flex-direction: column;
         align-items: flex-start;
@@ -38,37 +60,72 @@
         gap: 20px;
         padding-bottom: 40px;
     }
-
-
-
     .footer-top-ptn h3 {
-
-
         font-size: 30px;
     }
-
     .footer-title span {
         font-weight: 600;
     }
-
     .footer-middle {
         flex-wrap: wrap-reverse;
         gap: 20px;
     }
-
     .footer-brand {
         gap: 20px;
         max-width: 330px;
     }
-    .scroller-main{
-        flex-direction: column;
+    /* .scroller-main{
+        height: auto;
+        overflow: visible;
         align-items: flex-start;
-    }
-
-
-
+    } */
+    /* .scroller-section {
+        padding: 0px 30px;
+    } */
+  .right-scroller
+  {
+     display: none;
+     /* height: 50vh; */
+   }
+   /* .right-img img,
+    .left-cont .left-hub-card {
+      position: relative;
+      transform: none;
+      height: fit-content;
+    } */
+   .left-scroller{
+    width: 100%;
+  }
+  .left-hub-card{
+    height:auto !important;
+padding:  0px 40px;
+  }
+  .pin-spacer{
+    padding: 0px !important ;
+    height: unset !important;
+    margin:0 auto !important;
+  }
+  .pin-space
+  .scroller-section .pin-spacer{
+    padding: 0px !important ;
+    height: unset !important;
+  }
+  .scroller-section{
+    position: unset !important;
+    padding: 0px;
+  }
+  .scroller-section .pin-spacer .scroller-main{
+    height: unset !important;
+    position: unset !important;
+    max-height: unset !important;
+  }
+  .left-scroller{
+    height: unset !important;
+  }
+   .pin-spacer.left-cont{
+    height:unset !important;
+   }
 }
-
 
 @media screen and (max-width: 1024px) {
     .metrics_section_main {
@@ -77,6 +134,11 @@
         justify-content: flex-start;
         gap: 20px;
     }
+    .pin-spacer{
+        padding: 0px !important ;
+        height: unset !important;
+        margin:0 auto !important;
+      }
 
     /************** mobile menu ***************/
 
@@ -150,20 +212,20 @@
     .menu-open .mobileIcon a:before {
         transform: rotate(45deg);
         top: -1px;
-        background: var(--black);
+                background: var(--green);
     }
 
     .menu-open .mobileIcon a:after {
         transform: rotate(-45deg);
         top: -1px;
-        background: var(--black);
+                background: var(--green);
     }
 
     .mobileIcon a:before {
         width: 24px;
         height: 3px;
         border-radius: 5px;
-        background: var(--black);
+                background: var(--green);
     }
 
     .mobileIcon a,
@@ -171,7 +233,7 @@
         width: 24px;
         height: 3px;
         border-radius: 5px;
-        background: var(--black);
+                background: var(--green);
     }
 
     .mobileIcon a {
@@ -389,8 +451,22 @@
             color: var(--white);
             opacity: 0.8;
         }
+        .pin-spacer{
+            padding: 0px !important ;
+            height: unset !important;
+            margin:0 auto !important;
+          }
+          .logo_main {
+            gap:30px;
+          }
+          .logo_main .logo {
+            width: 160px;
+            height: 80px;
+            
+        }
 
     }
+
 
     @media screen and (max-width: 767px) {
         .Company {
@@ -511,18 +587,13 @@
             font-size: 16px;
             line-height: normal;
         }
-
         .company-hub-grid {
-
             gap: 10px;
             padding-top: 10px;
         }
-
         .company-hub-card {
-
             gap: 10px;
         }
-
         .hub-icon {
             display: flex;
             width: 50px;
@@ -574,18 +645,14 @@
         }
 
         .footer-links {
-
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
-
         }
 
         .ul-li li a {
-
             gap: 12px;
             padding: 10px;
             white-space: nowrap;
-
         }
 
         .footer-top {
@@ -593,10 +660,16 @@
         }
 
         .footer-top-ptn {
-
             gap: 8px;
-
         }
+        .scroller-content h4{
+            font-size: 30px;
+        }
+        .pin-spacer{
+            padding: 0px !important ;
+            height: unset !important;
+            margin:0 auto !important;
+          }
      
     }
 
@@ -739,8 +812,13 @@
         }
 
         .company-hub-grid {
-            gap: 10px;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+          
             padding-top: 6px;
+        }
+        .company-hub-card{
+            border-right: none;
         }
 
         .company-hub-card {
@@ -826,6 +904,27 @@
             font-size: 16px;
             font-weight: 600;
         }
+        .scroller-content {
+            gap: 8px;
+        }
+        .scroller-content h4{
+            font-size:20px;
+        }
+        .scroller-content p{
+            font-size:16px;
+        }
+        .left-icon_list{
+            gap: 10px;
+        }
+        .left-hub-card{
+            padding-top: 10px;
+            gap: 14px;
+        }
+        .pin-spacer{
+            padding: 0px !important ;
+            height: unset !important;
+            margin:0 auto !important;
+          }
 
     }
 
@@ -920,14 +1019,31 @@
         .footer-top-ptn {
 
             gap: 8px;
-
-
         }
-
         .footer-bottom p {
             font-size: 12px;
         }
-    }
+        .pin-spacer{
+            padding: 0px !important ;
+            height: unset !important;
+            margin:0 auto !important;
+          }
+          .scroller-content p{
+            font-size: 12px;
+            line-height: normal;
+          }
+         .scroller-content h4{
+            font-size: 14px;
+            line-height: normal;
+          }
+          .left-icon_list li{
+            font-size: 12px;
+          }
+          .footer-button{
+            font-size: 14px;
+          }
+         
+        }
 
     @media screen and (max-width: 374px) {
         .Company {
@@ -971,6 +1087,782 @@
         .Teleperson-wrapper {
             margin: auto;
         }
+        .pin-spacer{
+            padding: 0px !important ;
+            height: unset !important;
+            margin:0 auto !important;
+          }
+          .left-icon_list{
+            gap: 4px;
+          }
+           .left-icon_list li{
+            font-size: 12px;
+          }
+        }
+        
+    /* **********dark-mood****************** */
+    @media screen and (max-width: 1920px) {}
 
+@media screen and (max-width: 1800px) {}
+
+@media screen and (max-width: 1700px) {
+    .BigContainer {
+        padding: 0px 30px;
+    }
+}
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1440px) {
+    .blog-section{
+        padding: 20px 0px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .dark-mood.Teleperson {
+        padding: 30px 0px;
+    }
+    .dark-mood.Teleperson-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .dark-mood .footer-wrapper {
+        gap: 34px;
+    }
+    .dark-mood.footer-top {
+
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    .dark-mood .footer-top-ptn h3 {
+        font-size: 30px;
+    }
+
+    .dark-mood .footer-title span {
+        font-weight: 600;
+    }
+
+    .dark-mood .footer-middle {
+        flex-wrap: wrap-reverse;
+        gap: 20px;
+    }
+
+    .dark-mood .footer-brand {
+        gap: 20px;
+        max-width: 330px;
+    }
+    .dark-mood.scroller-main{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .dark-mood .left-cont{
+        padding: 0px !important;
+        height:unset !important;
+        margin:0 auto !important;
+        
+    }
+    .dark-mood .nav-buttons{
+        padding: 15px 10px;
+        width: 40px;
+        height: 40px;
+    }
+    .dark-mood .side-arrow {
+        padding: 15px 10px;
+        width: 40px;
+        height: 40px;
+    }
+    .blog-main-left h3{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+.dark-mood .serve{
+    padding: 20px 0px;
+}
+
+    /************** mobile menu ***************/
+
+
+}
+    @media screen and (max-width: 900px) {
+        .dark-mood .Company {
+            padding: 30px 0px;
+        }
+
+        .dark-mood .serve {
+            padding: 30px 0px;
+        }
+
+        .metrics_section {
+            padding: 30px 0px;
+        }
+
+        .dark-mood .footer-wrapper {
+            gap: 20px;
+        }
+
+        .dark-mood .footer-top {
+            gap: 10px;
+            padding-bottom: 40px;
+        }
+
+        .dark-mood .footer-top-ptn h3 {
+
+
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .dark-mood .footer-top-ptn p {
+            font-size: 16px;
+        }
+
+        .dark-mood.footer-title span {
+            font-weight: 600;
+        }
+
+        .dark-mood .footer-middle {
+            flex-wrap: wrap-reverse;
+            gap: 10px;
+        }
+
+        .dark-mood  .footer-brand {
+            gap: 20px;
+            max-width: 330px;
+        }
+
+        .dark-mood .footer-links {
+            gap: 30px;
+
+        }
+
+        .dark-mood .footer-column a {
+            color: var(--white);
+            font-weight: 600;
+            font-size: 18px;
+            padding: 10px;
+            font-family: "poppins";
+        }
+
+        .dark-mood .ul-li li a {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 16px;
+            white-space: nowrap;
+            font-size: 16px;
+            font-weight: 300;
+            color: var(--white);
+            opacity: 0.8;
+        }
+        .dark-mood .blog-card-img{
+            max-width: 100%;
+        }
+        .blog-section {
+            padding: 30px 0px;
+        }
+         .left-cont{
+            padding: 0px !important;
+            height:unset !important;
+            margin:0 auto !important;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .dark-mood .Company {
+            padding: 30px 0px;
+        }
+
+        .dark-mood .server {
+            padding: 30px 0px;
+        }
+
+        .metrics_section {
+            padding: 30px 0px;
+        }
+
+        .dark-mood .banner {
+            padding: 30px;
+        }
+
+        .dark-mood .banner_main {
+
+            gap: 20px;
+        }
+
+        .dark-mood .banner-text h1 {
+            font-size: 30px;
+        }
+
+        .dark-mood .banner-text {
+            gap: 20px;
+        }
+
+        .dark-mood .banner-text p {
+            font-size: 16px
+        }
+
+        .dark-mood .demo {
+            padding: 10px 18px;
+            font-size: 16px;
+        }
+
+        .dark-mood .signup {
+            padding: 10px 18px;
+            font-size: 16px;
+        }
+
+        .dark-mood .banner-img {
+            max-width: 984px;
+            padding-top: 24px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .dark-mood .company-title {
+            gap: 20px;
+        }
+
+        .dark-mood .company-title p {
+            font-size: 16px;
+        }
+
+        .dark-mood .logo-container {
+            gap: 50px;
+        }
+
+        .dark-mood .tele-title h2 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .dark-mood .tele-title span {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .dark-mood .Teleperson-left {
+            gap: 20px;
+            align-items: center;
+        }
+
+        .dark-mood .Teleperson-left p {
+            line-height: normal;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .dark-mood .Teleperson-count {
+            margin-left: 0px;
+            gap: 20px;
+            padding-top: 20px;
+        }
+
+        .dark-mood .Teleperson-count h1 {
+            font-size: 30px;
+        }
+
+        .dark-mood .Teleperson-count h5 {
+            font-size: 18px;
+        }
+
+        .dark-mood .count-title p {
+            font-size: 16px;
+        }
+
+        /* ************8serve********** */
+        .dark-mood .serve-container {
+            gap: 20px;
+        }
+
+        .dark-mood .serve-tilte {
+            gap: 10px;
+        }
+        .dark-mood .serve-tilte h3 {
+            font-size: 30px;
+        }
+        .dark-mood .serve-tilte p {
+            font-size: 16px;
+            line-height: normal;
+        }
+        .dark-mood .company-hub-grid {
+            gap: 10px;
+            padding-top: 10px;
+        }
+        .dark-mood .company-hub-card {
+            gap: 10px;
+        }
+
+        .dark-mood .hub-icon {
+            display: flex;
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 46.667px;
+            background: rgba(66, 191, 166, 0.10);
+        }
+
+        .dark-mood .hub-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--green)
+        }
+
+        .dark-mood  .hub-content h6 {
+            font-size: 18px;
+        }
+        .dark-mood .hub-content p {
+            font-size: 16px;
+        }
+
+        /* *******metrics************* */
+        .metrics_section_main {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        .metrics_right {
+            gap: 20px;
+        }
+
+        .metrics_right p {
+            font-style: 16px;
+            line-height: normal;
+        }
+
+        .right_title h4 {
+            font-size: 20px
+        }
+
+        .right_title p {
+            font-size: 16px
+        }
+
+        .dark-mood .footer-links {
+
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
+        }
+
+        .dark-mood .ul-li li a {
+
+            gap: 12px;
+            padding: 10px;
+            white-space: nowrap;
+
+        }
+
+        .dark-mood .footer-top {
+            flex-wrap: wrap;
+        }
+
+        .dark-mood .footer-top-ptn {
+
+            gap: 8px;
+
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .dark-mood .Company {
+            padding: 20px 0px;
+        }
+
+        .dark-mood .Teleperson {
+            padding: 20px 0px;
+        }
+
+        .dark-mood  .serve {
+            padding: 20px 0px;
+        }
+
+        .dark-mood .btn-gp .feture {
+            white-space: nowrap;
+            font-size: 14px;
+        }
+
+        .dark-mood .btn-gp p {
+            white-space: nowrap;
+            font-size: 14px;
+        }
+
+        .dark-mood .banner-text {
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .dark-mood .banner-text h1 {
+            font-size: 20px;
+        }
+
+        .dark-mood .banner-text p {
+            font-size: 14px;
+            line-height: normal;
+        }
+
+        .dark-mood .demo {
+            padding: 10px 18px;
+            font-size: 16px;
+        }
+
+        .dark-mood .signup {
+            padding: 10px 18px;
+            font-size: 16px;
+        }
+
+        .dark-mood  .company-title p {
+            font-size: 14px;
+        }
+
+        .dark-mood .logo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-self: center;
+            margin: 0 auto;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .dark-mood .tilte-logo {
+            max-width: 180px;
+            max-height: 80px;
+        }
+
+        .dark-mood .tele-title h2 {
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .dark-mood .tele-title span {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .dark-mood .Teleperson-left {
+            gap: 10px;
+            align-items: center;
+        }
+
+        .dark-mood .Teleperson-left .signup {
+            width: fit-content;
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .dark-mood .Teleperson-left p {
+            line-height: normal;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .dark-mood .Teleperson-wrapper {
+            gap: 27px;
+        }
+
+        .dark-mood .Teleperson-count {
+            flex-wrap: wrap;
+            margin-left: 0px;
+            gap: 10px;
+            padding-top: 10px;
+        }
+
+        .dark-mood .Teleperson-count h1 {
+            font-size: 20px;
+        }
+
+        .dark-mood .Teleperson-count h5 {
+            font-size: 16px;
+        }
+
+        .dark-mood .count-title p {
+            font-size: 14px;
+        }
+
+        .dark-mood .Teleperson-wrapper {
+            margin: auto;
+        }
+
+        /* ****************serve */
+        .dark-mood .serve-container {
+            gap: 10px;
+        }
+
+        .dark-mood .serve-tilte {
+            gap: 8px;
+        }
+
+        .dark-mood .serve-tilte h3 {
+            font-size: 20px;
+        }
+
+        .dark-mood .serve-tilte p {
+            font-size: 14px;
+            line-height: normal;
+        }
+
+        .dark-mood .company-hub-grid {
+            gap: 10px;
+            padding-top: 6px;
+        }
+        .dark-mood .company-hub-card {
+            gap: 6px;
+        }
+        .dark-mood .hub-icon {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 46.667px;
+            background: rgba(66, 191, 166, 0.10);
+        }
+        .dark-mood .hub-icon svg {
+            width: 15px;
+            height: 15px;
+            fill: var(--green)
+        }
+        .dark-mood .hub-content h6 {
+            font-size: 16px;
+        }
+        .dark-mood .hub-content p {
+            font-size: 14px;
+        }
+        .metrics_section_main {
+            gap: 6px;
+        }
+        .metrics_right {
+            gap: 10px;
+        }
+
+        .metrics_right p {
+            font-style: 14px;
+            line-height: normal;
+        }
+
+        .right_title h4 {
+            font-size: 16px;
+        }
+
+        .right_title p {
+            font-size: 14px
+        }
+
+        .dark-mood.footer-bottom p {
+            font-size: 12px;
+        }
+
+        .dark-mood.footer-bottom {
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .dark-mood.footer-icons img {
+            width: 14px;
+            height: 14px;
+        }
+      
+        .dark-mood.footer-button {
+            padding: 10px 10px;
+            border-radius: 130px;
+            background-color: var(--green);
+            white-space: nowrap;
+            position: relative;
+        }
+        .dark-mood.footer-button a::after {
+            width: 20px;
+            height: 20px;
+        
+        }
+        .dark-mood.footer-button a {
+          
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .dark-mood .blog-main-left h3{
+font-size: 16px;
+        }
+        .dark-mood .pin-spacer{
+            padding: 0px !important ;
+            height: unset !important;
+            margin:0 auto !important;
+        }
 
     }
+
+    @media screen and (max-width: 479px) {
+        .dark-mood .blog-card-img{
+            /* padding: 0px 10px; */
+            width: 100%;
+        }
+        .dark-mood .Company {
+            padding: 20px 0px;
+        }
+
+        .dark-mood.demo {
+            padding: 8px 10px;
+            font-size: 13px;
+        }
+
+        .dark-mood.signup {
+            padding: 8px 10px;
+            font-size: 13px;
+        }
+
+        .dark-mood.Teleperson-wrapper {
+            margin: auto;
+        }
+
+        .dark-mood.learn-more {
+            white-space: nowrap;
+            font-size: 10px;
+        }
+
+        .dark-mood.hub-content h6 {
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .dark-mood.hub-content h6 {
+            .hub-content p {
+            font-size: 12px;
+            line-height: normal;
+        }
+        .pin-spacer{
+            padding: 0px !important ;
+            height: unset !important;
+            margin:0 auto !important;
+          }
+    }
+    .dark-mood .eight_p p {
+            font-style: 14px;
+            line-height: normal;
+        }
+        .right_title h4 {
+            font-size: 16px;
+        }
+        .right_title p {
+            font-size: 12px
+        }
+        .right_title {
+            gap: 4px;
+        }
+        .dark-mood .download_btn {
+            padding: 5px 10px;
+        }
+        .dark-mood .download_btn a {
+            font-size: 12px;
+        }
+        .dark-mood .download_btn a::before {
+            width: 20px;
+            height: 20px;
+            top: 0px;
+            vertical-align: middle;
+            padding-left: 1px;
+        }
+        .dark-mood .footer-links {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 4px;
+        }
+        .dark-mood .ul-li li a {
+            gap: 4px;
+            padding: 10px;
+            white-space: nowrap;
+        }
+
+        .dark-mood.footer-top {
+            flex-wrap: wrap;
+        }
+        .dark-mood .footer-top-ptn {
+            gap: 8px;
+        }
+        .dark-mood .footer-bottom p {
+            font-size: 12px;
+        }
+        .dark-mood .blog-container{
+            padding-top: 10px;
+        }
+    }
+    @media screen and (max-width: 374px) {
+        .dark-mood .Company {
+            padding: 20px 0px;
+        }
+        .dark-mood.blog-container{
+            margin: 0 auto;
+        }
+        .dark-mood .container {
+            padding: 0px 20px;
+        }
+
+        .dark-mood .header-logo {
+            max-width: 140px;
+        }
+
+        .dark-mood .btn-gp .feture {
+            white-space: nowrap;
+            font-size: 10px;
+        }
+
+        .dark-mood .btn-gp p {
+            white-space: nowrap;
+            font-size: 10px;
+        }
+
+        .dark-mood .demo {
+            padding: 3px 10px;
+            font-size: 10px;
+        }
+
+        .dark-mood .signup {
+            padding: 3px 10px;
+            font-size: 10px;
+        }
+
+        .dark-mood .demo::before {
+            width: 14px;
+            height: 14px;
+            margin-right: 6px;
+        }
+
+        .dark-mood .Teleperson-wrapper {
+            margin: auto;
+        }
+        .dark-mood .blog-main-left h3{
+            font-size: 12px;
+                    }
+                    .dark-mood .logo_otr{
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                    }
+                    .dark-mood .logo_main{
+                        padding-top: 20px;
+                    }
+                    /* .dark-mood .blog-container
+                    {
+                        margin: 0 auto;
+                    } */
+                    .dark-mood .pin-spacer{
+                        padding: 0px !important ;
+                        height: unset !important;
+                        margin:0 auto !important;
+                      }
+                      .dark-mood .left-scroller{
+                        
+                        padding: 0px !important ;
+                        height: unset !important;
+                        margin:0 auto !important;
+                      }
+                      .dark-mood .left-cont{
+                        padding: 0px !important ;
+                        height: unset !important;
+                        margin:0 auto !important;
+                      }
+                }
